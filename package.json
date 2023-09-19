@@ -15,6 +15,7 @@
   "homepage": "https://github.com/CH19/random-str-msg-ch19#readme",
   "bin": {
     "random-str-msg-ch19": "./bin/global.js"
-  }
+  },
+  "preferGlobal": true
 }
 

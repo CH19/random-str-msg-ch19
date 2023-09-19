@@ -11,13 +11,17 @@ const messages = [
   "Reinventing the wheel. Again.",
   "This is not the commit message you are looking for",
   "Batman! (this commit has no parents)",
+  "se puta y ya",
+  "la mano arriba cintura sola la media vuelta danza kuduro",
+  "tienes que ser grande"
 ];
 
 const funnyCommit = () => {
   const message = messages[Math.floor(Math.random() * messages.length)];
-  console.log(`\x1b[35m${message}\x1b[89m`);}
+  console.log(` \x1b[35m${message}\x1b[89m`);}
 
-// funnyCommit();
-module.exports = {
-  funnyCommit
-};
+  module.exports = {
+      funnyCommit
+    };
+    
+    funnyCommit();
