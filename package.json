@@ -1,12 +1,16 @@
 {
   "name": "random-str-msg-ch19",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "random String messages",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["javacript", "npm", "random Strings"],
+  "keywords": [
+    "javacript",
+    "npm",
+    "random Strings"
+  ],
   "author": "Christian La Cruz <chcc190505@gmail.com>",
   "license": "ISC",
   "bugs": {
@@ -18,4 +22,3 @@
   },
   "preferGlobal": true
 }
-
