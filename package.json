@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/CH19/random-str-msg-ch19#readme",
   "bin": {
-    "random-str-msg-ch19": "./bin/global.js"
+    "random-str-msg-ch19": "./bin/global.js && cowsay Hola mundo"
   },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "dependencies": {
+    "cowsay": "^1.5.0"
+  }
 }

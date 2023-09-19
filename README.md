@@ -38,11 +38,10 @@
 you need first install npm in your computer or a node.js version above the 18 
 
 next. in your terminal
-```
-npm
-npm install -g random-str-msg-ch19
 
-```
+```npm ```
+
+```npm install -g random-str-msg-ch19```
 
 ## Usage
 
