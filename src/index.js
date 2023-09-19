@@ -1,4 +1,5 @@
-let cowsay = require('cowsay');
+const cowsay = require('cowsay');
+
 
 const messages = [
     "This is where it all begins...",
