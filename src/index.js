@@ -1,4 +1,30 @@
+const xmlhttprequest = require('xmlhttprequest').XMLHttpRequest; 
 const cowsay = require('cowsay');
+
+
+function fetchData(urlApi, callback){
+    const xhtr = new xmlhttprequest();
+    xhtr.open('GET', urlApi, true);
+    xhtr.onreadystatechange = (event)=>{
+        if(xhtr.readyState == 4){
+            if(xhtr.status == 200){
+                return callback(null, JSON.parse(xhtr.responseText))
+            }else{
+                console.log('HUBO UN ERROR');
+                const error = new Error('Error' + urlApi);
+                return callback(error, null)
+            }
+        }
+    }
+    console.log(xhtr);
+    xhtr.send()
+}
+function searchInformation(error, data){
+    if(error){
+        return console.log('error' + error);
+    }
+    return data.title;
+}
 
 
 const messages = [
@@ -27,9 +53,13 @@ const funnyCommit = () => {
     
     };
 const printMessage = () =>{
-    console.log(cowsay.say({text: funnyCommit(), r: true}));
-
+    // console.log(message);
+    console.log(cowsay.say({text: 'hola' , r: true}));
+    const message =  fetchData('https://jsonplaceholder.typicode.com/todos/3', searchInformation);
+    
 }
 module.exports = {
  printMessage
 }
+
+printMessage()
